@@ -15,7 +15,7 @@ namespace CandyShop.Models
         public string ImgUrl { get; set; }
         public string ImgThumbnailUrl { get; set; }
         public bool IsOnSale { get; set; }
-        public bool IsInStocl { get; set; }
+        public bool IsInStock { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 

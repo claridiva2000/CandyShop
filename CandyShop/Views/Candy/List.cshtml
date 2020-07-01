@@ -1,0 +1,21 @@
+﻿@model IEnumerable<CandyShop.Models.Candy>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Candy</title>
+</head>
+<body>
+    @foreach (var candy in Model )
+    {
+        <div>
+            <h2>@candy.Name</h2>
+            <h3>@candy.Price.ToString("c")</h3>
+            <h3>@candy.Category.CategoryName</h3>
+        </div>
+    }
+</body>
+</html>
